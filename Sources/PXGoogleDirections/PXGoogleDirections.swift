@@ -117,7 +117,7 @@ public class PXGoogleDirections: NSObject {
 	/// Specifies the region code, specified as a ccTLD ("top-level domain") two-character value (can be practically utilized with any domain in which the main Google Maps application has launched driving directions)
 	public var region: String?
 	/// Specifies an optional delegate that will be notified of all events regarding the Google Directions API
-	public var delegate: PXGoogleDirectionsDelegate?
+	public weak var delegate: PXGoogleDirectionsDelegate?
 
 	// MARK: Properties
 
